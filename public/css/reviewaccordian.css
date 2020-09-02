@@ -1,0 +1,236 @@
+@font-face {
+    font-family: GilE;
+    src: url(../fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-ExtraBold.otf);
+  }
+  @font-face {
+    font-family: GilL;
+    src: url(../fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf);
+  }
+  @font-face {
+    font-family: ProductR;
+    src: url(../fonts/product-sans/Product\ Sans\ Regular.ttf);
+  }
+  @font-face {
+    font-family: ProductB;
+    src: url(../fonts/product-sans/Product\ Sans\ Bold.ttf);
+}
+
+.scrolling {
+  height: 300px !important;
+  overflow-y: scroll;
+  overflow-x: hidden;   
+}
+
+/* width */
+.scrolling::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.scrolling::-webkit-scrollbar-track {
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  border-radius: 11px;
+  opacity: 1;
+}
+ 
+/* Handle */
+.scrolling::-webkit-scrollbar-thumb {
+  background: #FD585CCC 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  opacity: 1;
+}
+
+/* Handle on hover */
+.scrolling::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 0, 0); 
+}
+
+.accordion .card {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 3px #8080804D;
+    border-radius: 0px;
+    border: none;
+    opacity: 1;
+    background-clip: border-box;
+}
+
+.accordion .card .card-header {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    color: inherit;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 4px 4px 0px 0px;
+    opacity: 1;
+}
+
+.accordion .card .card-body {
+    flex: 1 1 auto;
+    padding: 10px;
+    margin-bottom: 15px;
+    height: 100%;
+    width: 100%;
+    border-top: none;
+}
+
+.accordianhead {
+  padding: 20px 0px;
+  margin: 0;
+  font-size: 24px;
+  font-family: ProductR;
+  letter-spacing: 0px;
+  color: #272727;
+  opacity: 1;
+}
+
+.accordianbutton {
+  padding: 0;
+  position: relative;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  background: transparent 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+}
+
+.accordianbutton:focus {
+  outline: none;
+}
+
+.initials {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 6px #00000029;
+  opacity: 1;
+}
+
+.initials p {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  color: #272727;
+  font-size: 20px;
+  font-family: ProductR;
+
+}
+
+.details h4 {
+  padding: 12px 0;
+  margin: 2px 0;
+  font-size: 20px;
+  font-family: ProductB;
+  letter-spacing: 0px;
+  color: #272727;
+  opacity: 1;
+}
+
+.details p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: justify;
+  font-size: 18px;
+  font-family: ProductR;
+  letter-spacing: 0px;
+  color: #272727;
+  opacity: 1;
+}
+
+.details a {
+  font-size: 20px;
+  font-family: ProductB;
+  letter-spacing: 0px;
+  color: #808080B3;
+  opacity: 1;
+}
+
+.activityReviews {
+  margin-bottom: 20px !important;
+  padding: 10px !important;
+  text-align: justify;
+  background: #F9FAFC;
+  border-left: 5px solid #FFDB64CC;
+}
+
+.dots{
+  font-size: 15px;
+  position: relative;
+  bottom: 3px;
+  text-align: center;
+  padding: 5px 10px;
+  margin-left: 10px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  background: #FD585C99 0% 0% no-repeat padding-box;
+}
+
+.submitbox{
+  margin-top: 15px;
+}
+
+.submitbox textarea {
+  text-align: justify;
+  font-size: 18px;
+  height: 150px;
+  padding: 15px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #70707030;
+  border-radius: 6px;
+  opacity: 1;
+}
+
+.submitbox a {
+  float: right;
+  font-size: 20px;
+  font-family: ProductR;
+  letter-spacing: 0px;
+  color: #808080B3 !important;
+  opacity: 1;
+}
+
+.replies {
+  margin-top: 15px;
+  padding: 10px;
+  background: #F9FAFC 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.replies .initials {
+  width: 40px;
+  height: 40px;
+}
+
+.replies .initials p {
+  padding: 5px 0;
+}
+
+.replies .details h4 {
+  font-size: 18px;
+  font-family: ProductR;
+  padding: 5px;
+  margin: 7px 0;
+  color: #707070;
+}
+
+.replies .details p {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.replies .details img {
+  float: right;
+  margin: 0 10px;
+}

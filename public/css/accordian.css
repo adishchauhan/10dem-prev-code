@@ -1,0 +1,73 @@
+@font-face {
+    font-family: GilE;
+    src: url(../fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-ExtraBold.otf);
+  }
+  @font-face {
+    font-family: GilL;
+    src: url(../fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf);
+  }
+  @font-face {
+    font-family: ProductR;
+    src: url(../fonts/product-sans/Product\ Sans\ Regular.ttf);
+  }
+  @font-face {
+    font-family: ProductB;
+    src: url(../fonts/product-sans/Product\ Sans\ Bold.ttf);
+}
+
+.card {
+    position: relative;
+    padding: 0;
+    margin: 0px 20px;
+    margin-bottom: 50px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    /* box-shadow: 1px 1px 6px #00000029; */
+    border-radius: 0px;
+    border: none;
+    opacity: 1;
+    /* background-clip: border-box; */
+}
+
+.card-header {
+    height: 150px;
+    padding: .75rem 1.25rem;
+    color: inherit;
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    border-radius: 4px 4px 0px 0px;
+    opacity: 1;
+}
+.accordianbutton{
+    width: 65px;
+    height: 65px;
+    margin-top: 30px;
+    border: none;
+    outline: none !important;
+    border-radius: 50%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 12px #00000029;
+    opacity: 1;
+}
+
+.accordianhead {
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: ProductB;
+    letter-spacing: 0px;
+    color: #272727;
+    opacity: 1;
+}
+
+.accordianedit {
+    display: none;
+    font-size: 24px;
+    font-family: ProductR;
+    letter-spacing: 0px;
+    color: #FD585C;
+    opacity: 1;
+}

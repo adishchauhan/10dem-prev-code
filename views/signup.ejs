@@ -1,0 +1,225 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+       
+        <link rel="stylesheet" href="/css/util.css">
+        <link rel="stylesheet" href="/css/signup.css">
+
+        <title>10dem Education|Sign Up</title>
+		<style>
+        .sign_up_bg {
+            background-image: url("/img/resized_img.jpg");
+            min-height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        </style>
+        <style>
+        /* Tooltip */
+        .tooltip > .tooltip-inner {
+            height: 180px !important;
+            padding: 10px;
+            text-align: left;
+            color: #000000;
+            line-height: 2rem; 
+            font-size: 14px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000029;
+            border: 1px solid rgba(247, 199, 41, 0.18);
+            border-radius: 5px;
+            opacity: 1;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="header"></div>
+
+        <div class="sign_up_bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+
+                        <% if(type==='creation'){%>
+                            <span style="color: red;" ><%= error %></span>
+                        <% } %>
+
+                        <form class="validate-form" action="/auth/local/signup" method="POST">
+                            <span class="login100-form-title m-t-30">
+                                Sign Up
+                            </span>
+
+                            <div class="text-center p-b-20">
+                                <span class="txt2">
+                                    Continue with
+                                </span>
+                            </div>
+
+                            <div class="login100-form-social flex-c-m">
+                                <a href="#" class="login100-form-social-item flex-c-m bg1 m-r-10">
+                                    <img src="/img/google.png" style="width: 25px;height: 25px;" alt="">
+                                </a>
+                                
+                                <a href="#" class="login100-form-social-item flex-c-m bg1 m-r-10">
+                                    <img src="/img/facebook.png" style="width: 25px;height: 25px;" alt="">
+                                </a>
+
+                                <a href="#" class="login100-form-social-item flex-c-m bg1 m-r-10">
+                                    <img src="/img/linkedin.png" style="width: 25px;height: 25px;" alt="">
+                                </a>
+                            </div>
+
+
+                            <div class="text-center p-t-20 p-b-20 m-t-20 m-b-20">
+                                <p><span style="position: relative;top: -8px;">_________________&nbsp;&nbsp;</span>Or<span style="position: relative;top: -8px;">&nbsp;&nbsp;_________________</span></p>
+                            </div>
+
+                            <% if(type==='global'){ %>
+                                <span style="color: red;" ><%= error %></span>
+                            <% } %>
+
+                            <div class="wrap-input100">
+                                <input class="input100" type="text" name="name">
+                                <span class="focus-input100"></span>
+                                <span class="label-input100">Full Name</span>
+                            </div>
+                            <% if(type==='name'){ %>
+                                <span style="color: red;" ><%= error %></span>
+                            <% } %>
+                            
+                            <div class="wrap-input100 validate-input" data-validate = "Please enter a valid email address">
+                                <input class="input100" type="text" name="email">
+                                <span class="focus-input100"></span>
+                                <span class="label-input100">Email Address</span>
+                            </div>
+                            <% if(type==='email'){ %>
+                                <span style="color: red;" ><%= error %></span>
+                            <% } %>
+                            
+                            
+                            <div class="wrap-input100 validate-input" data-validate="Please enter a valid password" data-toggle="tooltip">
+                                <input class="input100" type="password" id="psw" name="pass">
+                                <span class="focus-input100"></span>
+                                <span class="label-input100">Password</span>
+                            </div>
+                            <% if(type==='pass'){ %>
+                                <span style="color: red;" ><%= error %></span>
+                            <% } %>
+
+        
+                            <div class="container-login100-form-btn">
+                                <button class="login100-form-btn">
+                                    Sign Up
+                                </button>
+                            </div>
+
+                            <div class="text-center p-t-20 p-b-20">
+                                <p>Already have an account? <span><a href="/user/signin" class="txt1">Sign In</a></span></p>
+                                
+                            </div>
+                            
+                        </form>
+                        <div id="message">
+                            <p>Password must contain the following:</p>
+                            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                            <p id="number" class="invalid">A <b>number</b></p>
+                            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>10dem © 2020</p>
+        </footer>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        
+        <script src="https://kit.fontawesome.com/6f24662773.js" crossorigin="anonymous"></script>
+
+        <script src="/js/signup.js"></script>
+        <!-- <script>
+            $(document).ready(function(){
+              $('[data-toggle="tooltip"]').tooltip({title: '<p>One Lowercase Character<br/>One Uppercase Character<br/>One Special Character<br/>8 Characters Minimum<br/>One number</p>', html: true, placement: "right"}); 
+            });
+        </script> -->
+        <!-- Md Irshad Message Part for password checker  -->
+        <script>
+            var myInput = document.getElementById("psw");
+            var letter = document.getElementById("letter");
+            var capital = document.getElementById("capital");
+            var number = document.getElementById("number");
+            var length = document.getElementById("length");
+
+            // When the user clicks on the password field, show the message box
+            myInput.onfocus = function() {
+            //document.getElementById("message").style.display = "block";
+            document.getElementById("message").style.display="block";
+            }
+
+            // When the user clicks outside of the password field, hide the message box
+            myInput.onblur = function() {
+            document.getElementById("message").style.display = "none";
+            }
+
+            // When the user starts to type something inside the password field
+            myInput.onkeyup = function() {
+            // Validate lowercase letters
+            var lowerCaseLetters = /[a-z]/g;
+            if(myInput.value.match(lowerCaseLetters)) {  
+                letter.classList.remove("invalid");
+                letter.classList.add("valid");
+            } else {
+                letter.classList.remove("valid");
+                letter.classList.add("invalid");
+            }
+            
+            // Validate capital letters
+            var upperCaseLetters = /[A-Z]/g;
+            if(myInput.value.match(upperCaseLetters)) {  
+                capital.classList.remove("invalid");
+                capital.classList.add("valid");
+            } else {
+                capital.classList.remove("valid");
+                capital.classList.add("invalid");
+            }
+
+            // Validate numbers
+            var numbers = /[0-9]/g;
+            if(myInput.value.match(numbers)) {  
+                number.classList.remove("invalid");
+                number.classList.add("valid");
+            } else {
+                number.classList.remove("valid");
+                number.classList.add("invalid");
+            }
+            
+            // Validate length
+            if(myInput.value.length >= 8) {
+                length.classList.remove("invalid");
+                length.classList.add("valid");
+            } else {
+                length.classList.remove("valid");
+                length.classList.add("invalid");
+            }
+            }
+        </script>
+    </body>
+</html>

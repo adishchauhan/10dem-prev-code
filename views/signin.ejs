@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        
+        <link rel="stylesheet" href="/css/util.css">
+        <link rel="stylesheet" href="/css/signup.css">
+
+
+        <title>10dem Education|Sign In</title>
+        <style>
+            .sign_up_bg {
+                background-image: url("/img/resized_img.jpg");
+                min-height: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header"></div>
+
+        <div class="sign_up_bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+   
+                    <form class="validate-form" action="/auth/local/signin" method="POST">
+                        <span class="login100-form-title m-t-30">
+                            Sign In
+                        </span>
+
+                        <div class="text-center p-b-20">
+                            <span class="txt2">
+                                Continue with
+                            </span>
+                        </div>
+
+                        <div class="login100-form-social flex-c-m">
+                            <a href="/auth/google" class="login100-form-social-item flex-c-m bg1 m-r-10">
+                                <img src="/img/google.png" style="width: 25px;height: 25px;" alt="">
+                            </a>
+                            
+                            <a href="/auth/facebook" class="login100-form-social-item flex-c-m bg1 m-r-10">
+                                <img src="/img/facebook.png" style="width: 25px;height: 25px;" alt="">
+                            </a>
+
+                            <a href="/auth/linkedin" class="login100-form-social-item flex-c-m bg1 m-r-10">
+                                <img src="/img/linkedin.png" style="width: 25px;height: 25px;" alt="">
+                            </a>
+                        </div>
+
+
+                        <div class="text-center p-t-20 p-b-20 m-t-20 m-b-20">
+                            <p><span style="position: relative;top: -8px;">_________________&nbsp;&nbsp;</span>Or<span style="position: relative;top: -8px;">&nbsp;&nbsp;_________________</span></p>
+                        </div>
+                        
+                        
+                        <div class="wrap-input100 validate-input" data-validate = "Please enter a valid email address">
+                            <input class="input100" type="text" name="email">
+                            <span class="focus-input100"></span>
+                            <span class="label-input100">Email Address</span>
+                        </div>
+                        <% if(type==='email'){  %>
+                            <span><%= error %></span>
+                        <% } %>
+                        
+                        <div class="wrap-input100 validate-input" data-validate="Please enter a valid password">
+                            <input class="input100" type="password" name="pass">
+                            <span class="focus-input100"></span>
+                            <span class="label-input100">Password</span>
+                        </div>
+                        <% if(type==='user'){  %>
+                            <span style="color: red;"><%= error %></span>
+                        <% } %> 
+    
+                        <div class="container-login100-form-btn">
+                            <button class="login100-form-btn">
+                                Sign In
+                            </button>
+                        </div>
+
+                        <div class="text-center p-t-20 p-b-20">
+                            <a href="" class="txt1">Forget Password?</a>
+                        </div>
+
+                        <div class="text-center p-t-20 p-b-20">
+                            <p>Don't have an account? <span><a href="/user/signup" class="txt1">Sign Up</a></span></p>
+                            
+                        </div>
+                        
+                    </form>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6"></div>   
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>10dem © 2020</p>
+        </footer>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        
+        <script src="https://kit.fontawesome.com/6f24662773.js" crossorigin="anonymous"></script>
+
+        <script src="/js/signup.js"></script>
+
+    </body>
+</html>

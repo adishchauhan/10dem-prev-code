@@ -1,0 +1,90 @@
+@font-face {
+    font-family: GilE;
+    src: url(../fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-ExtraBold.otf);
+  }
+  @font-face {
+    font-family: GilL;
+    src: url(../fonts/Gilroy-FREE/Gilroy-FREE/Gilroy-Light.otf);
+  }
+  @font-face {
+    font-family: ProductR;
+    src: url(../fonts/product-sans/Product\ Sans\ Regular.ttf);
+  }
+  @font-face {
+    font-family: ProductB;
+    src: url(../fonts/product-sans/Product\ Sans\ Bold.ttf);
+}
+
+.card {
+    position: relative;
+    padding: 0;
+    margin: 25px 20px 25px 15px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 1px 1px 6px #00000029;
+    border-radius: 25px;
+    opacity: 1;
+    background-clip: border-box;
+    
+}
+
+.card-img-top {
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card-title {
+    margin: 0;
+    padding: 10px 7px 5px 15px;
+    color: #272727;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 0;
+    padding: 5px 7px 15px 15px;
+    line-height: 1.7em;
+    font-size: 16px;
+    font-family: ProductR;
+    letter-spacing: 0px;
+    color: #292929;
+    opacity: 1;
+    text-align: justify;
+}
+
+.card a {
+    float: left;
+    font-weight: 600;
+    color: #fd585c;
+    font-size: medium;
+    padding-left: 15px;
+    margin-bottom: 8px;
+}
+
+.card a img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    float: right;
+    left: 6rem;
+}
+
+  
+#testimonials {
+margin-left: 50px;
+}
+
+@media (max-width: 767px) {
+.testimonials {
+    margin: 30px 10px;
+}
+}
+  
